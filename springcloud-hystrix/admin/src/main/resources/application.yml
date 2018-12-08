@@ -1,5 +1,5 @@
 server:
-    port: 8022
+    port: 7000
 #注册中心配置
 eureka:
     client:
@@ -11,7 +11,7 @@ eureka:
         instance-id: ${spring.cloud.client.ip-address}:${server.port}
         # spring boot admin设置权限，故需要通过账号密码获取注册信息
         metadata-map:
-            user.name: admin
+            user.name: ginko
             user.password: 123456
 #RabbitMQ 配置
 spring:
@@ -26,8 +26,8 @@ spring:
         host: ${REDIS_HOST:localhost}
         port: ${REDIS_PORT:6379}
         password: ${REDIS_PASSWORD:123456}
-    #spring boot admin的登陆账号和密码配置
+    # 认证中心
     security:
         user:
-            name: admin
+            name: ginko
             password: 123456

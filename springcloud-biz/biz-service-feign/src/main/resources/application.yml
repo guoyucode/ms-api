@@ -15,7 +15,7 @@ eureka:
         prefer-ip-address: true
         instance-id: ${spring.cloud.client.ip-address}:${server.port}
         metadata-map:
-            cluster: feign
+            cluster: demoCluster
 
 # 启用服务容错保护
 feign:

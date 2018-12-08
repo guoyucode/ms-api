@@ -9,6 +9,7 @@
       <w>mybatisplus</w>
       <w>springboot</w>
       <w>springcloud</w>
+      <w>stringutils</w>
     </words>
   </dictionary>
 </component>

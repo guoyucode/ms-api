@@ -11,6 +11,7 @@
         <module name="biz-service" />
         <module name="biz-service-api" />
         <module name="biz-service-feign" />
+        <module name="dashboard" />
         <module name="demo-service" />
         <module name="eureka-server" />
         <module name="ms-api" />
@@ -21,6 +22,7 @@
         <module name="springcloud-hystrix" />
         <module name="springcloud-sleuth" />
         <module name="springcloud-zuul" />
+        <module name="turbine" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -28,6 +30,7 @@
       <module name="biz-service" target="1.8" />
       <module name="biz-service-api" target="1.8" />
       <module name="biz-service-feign" target="1.8" />
+      <module name="dashboard" target="1.8" />
       <module name="demo-service" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="ms-api" target="1.8" />
@@ -38,6 +41,7 @@
       <module name="springcloud-hystrix" target="1.8" />
       <module name="springcloud-sleuth" target="1.8" />
       <module name="springcloud-zuul" target="1.8" />
+      <module name="turbine" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
