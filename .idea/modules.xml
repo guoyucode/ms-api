@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/springcloud-biz/biz-service/biz-service.iml" filepath="$PROJECT_DIR$/springcloud-biz/biz-service/biz-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-biz/biz-service-api/biz-service-api.iml" filepath="$PROJECT_DIR$/springcloud-biz/biz-service-api/biz-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-biz/biz-service-feign/biz-service-feign.iml" filepath="$PROJECT_DIR$/springcloud-biz/biz-service-feign/biz-service-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-config/config-client/config-client.iml" filepath="$PROJECT_DIR$/springcloud-config/config-client/config-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-config/config-server/config-server.iml" filepath="$PROJECT_DIR$/springcloud-config/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-hystrix/dashboard/dashboard.iml" filepath="$PROJECT_DIR$/springcloud-hystrix/dashboard/dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-biz/biz-service/demo-service/demo-service.iml" filepath="$PROJECT_DIR$/springcloud-biz/biz-service/demo-service/demo-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-eureka/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/springcloud-eureka/eureka-server/eureka-server.iml" />

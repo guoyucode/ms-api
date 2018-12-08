@@ -1,0 +1,6 @@
+# 设置应用名称，需要和配置文件匹配
+server:
+    port: 9494
+spring:
+    application:
+        name: my-config-client

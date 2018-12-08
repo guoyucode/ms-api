@@ -1,17 +1,18 @@
 eureka:
-  server:
-  # 开发阶段可以通过配置：eureka.server.enable-self-preservation=false关闭自我保护模式
-    enable-self-preservation: false
-  client:
-  # 通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
-    registerWithEureka: false
-    fetchRegistry: false
-
+    server:
+        # 开发阶段可以通过配置：eureka.server.enable-self-preservation=false关闭自我保护模式
+        enable-self-preservation: false
+        # 读取对等节点服务器复制的超时的时间，单位为毫秒，默认为200
+        peer-node-read-timeout-ms: 1000
+    client:
+        # 通过eureka.client.registerWithEureka：false和fetchRegistry：false来表明自己是一个eureka server.
+        registerWithEureka: false
+        fetchRegistry: false
 spring:
-  profiles:
-    active: eureka-server-peer1
-  rabbitmq:
-    host: ${RABBIT_MQ_HOST:localhost}
-    port: ${RABBIT_MQ_PORT:5672}
-    username: ${RABBIT_MQ_USERNAME:ginko}
-    password: ${RABBIT_MQ_PASSWORD:ginko}
+    profiles:
+        active: eureka-server-peer1
+    rabbitmq:
+        host: ${RABBIT_MQ_HOST:localhost}
+        port: ${RABBIT_MQ_PORT:5672}
+        username: ${RABBIT_MQ_USERNAME:ginko}
+        password: ${RABBIT_MQ_PASSWORD:ginko}

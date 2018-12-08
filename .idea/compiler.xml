@@ -11,6 +11,8 @@
         <module name="biz-service" />
         <module name="biz-service-api" />
         <module name="biz-service-feign" />
+        <module name="config-client" />
+        <module name="config-server" />
         <module name="dashboard" />
         <module name="demo-service" />
         <module name="eureka-server" />
@@ -30,6 +32,8 @@
       <module name="biz-service" target="1.8" />
       <module name="biz-service-api" target="1.8" />
       <module name="biz-service-feign" target="1.8" />
+      <module name="config-client" target="1.8" />
+      <module name="config-server" target="1.8" />
       <module name="dashboard" target="1.8" />
       <module name="demo-service" target="1.8" />
       <module name="eureka-server" target="1.8" />

@@ -19,6 +19,8 @@
         <option value="$PROJECT_DIR$/springcloud-hystrix/admin/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-hystrix/dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-hystrix/turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config/config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config/config-client/pom.xml" />
       </list>
     </option>
   </component>

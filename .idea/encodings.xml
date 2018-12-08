@@ -10,6 +10,8 @@
     <file url="file://$PROJECT_DIR$/springcloud-biz/biz-service/demo-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-biz/biz-service/sms-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-config/config-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-config/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka/eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-hystrix" charset="UTF-8" />
