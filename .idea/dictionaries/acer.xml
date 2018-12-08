@@ -10,6 +10,7 @@
       <w>springboot</w>
       <w>springcloud</w>
       <w>stringutils</w>
+      <w>zuul</w>
     </words>
   </dictionary>
 </component>

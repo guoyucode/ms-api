@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/springcloud-hystrix/turbine/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-config/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-config/config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-zuul/zuul-swagger2/pom.xml" />
       </list>
     </option>
   </component>

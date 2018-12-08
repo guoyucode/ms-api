@@ -25,6 +25,7 @@
         <module name="springcloud-sleuth" />
         <module name="springcloud-zuul" />
         <module name="turbine" />
+        <module name="zuul-swagger2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -46,6 +47,7 @@
       <module name="springcloud-sleuth" target="1.8" />
       <module name="springcloud-zuul" target="1.8" />
       <module name="turbine" target="1.8" />
+      <module name="zuul-swagger2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

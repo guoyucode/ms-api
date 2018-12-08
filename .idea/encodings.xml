@@ -20,5 +20,6 @@
     <file url="file://$PROJECT_DIR$/springcloud-hystrix/turbine" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-sleuth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-zuul/zuul-swagger2" charset="UTF-8" />
   </component>
 </project>

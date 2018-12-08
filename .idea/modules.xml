@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/springcloud-sleuth/springcloud-sleuth.iml" filepath="$PROJECT_DIR$/springcloud-sleuth/springcloud-sleuth.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-zuul/springcloud-zuul.iml" filepath="$PROJECT_DIR$/springcloud-zuul/springcloud-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-hystrix/turbine/turbine.iml" filepath="$PROJECT_DIR$/springcloud-hystrix/turbine/turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-zuul/zuul-swagger2/zuul-swagger2.iml" filepath="$PROJECT_DIR$/springcloud-zuul/zuul-swagger2/zuul-swagger2.iml" />
     </modules>
   </component>
 </project>

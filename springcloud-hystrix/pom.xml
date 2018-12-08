@@ -17,6 +17,8 @@
 
     <modules>
         <module>admin</module>
+        <module>dashboard</module>
+        <module>turbine</module>
 
     </modules>
 
