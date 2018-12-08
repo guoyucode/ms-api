@@ -17,10 +17,11 @@ import org.springframework.web.client.RestTemplate;
  * @author ginko
  * @description 服务消费者
  */
+@SpringBootApplication
 @EnableDiscoveryClient
+@EnableHystrix
 @EnableFeignClients
 @Slf4j
-@SpringBootApplication
 public class BizServiceFeignApplication {
 
     public static void main(String[] args) {
@@ -33,4 +34,5 @@ public class BizServiceFeignApplication {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+
 }

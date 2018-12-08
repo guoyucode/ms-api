@@ -21,6 +21,11 @@
             <artifactId>biz-service-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <!-- 引入 hystrix  -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
         <!-- feign -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

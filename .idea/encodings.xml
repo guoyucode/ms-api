@@ -13,6 +13,7 @@
     <file url="file://$PROJECT_DIR$/springcloud-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-eureka/eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-hystrix" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-hystrix/admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-sleuth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud-zuul" charset="UTF-8" />
   </component>

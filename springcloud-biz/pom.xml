@@ -15,6 +15,13 @@
     <name>springcloud-biz</name>
     <description>Demo project for Spring Boot</description>
 
+    <modules>
+        <module>biz-service</module>
+        <module>biz-service-api</module>
+        <module>biz-service-feign</module>
+
+    </modules>
+
     <dependencies>
         <!-- 客户端依赖 -->
         <dependency>

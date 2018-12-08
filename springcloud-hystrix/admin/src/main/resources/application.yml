@@ -1,0 +1,33 @@
+server:
+    port: 8022
+#注册中心配置
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:8000/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:9000/eureka/
+    instance:
+        # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
+        prefer-ip-address: true
+        instance-id: ${spring.cloud.client.ip-address}:${server.port}
+        # spring boot admin设置权限，故需要通过账号密码获取注册信息
+        metadata-map:
+            user.name: admin
+            user.password: 123456
+#RabbitMQ 配置
+spring:
+    application:
+        name: springboot-admin
+    rabbitmq:
+        host: ${RABBIT_MQ_HOST:localhost}
+        port: ${RABBIT_MQ_PORT:5672}
+        username: ${RABBIT_MQ_USERNAME:ginko}
+        password: ${RABBIT_MQ_PASSWORD:ginko}
+    redis:
+        host: ${REDIS_HOST:localhost}
+        port: ${REDIS_PORT:6379}
+        password: ${REDIS_PASSWORD:123456}
+    #spring boot admin的登陆账号和密码配置
+    security:
+        user:
+            name: admin
+            password: 123456

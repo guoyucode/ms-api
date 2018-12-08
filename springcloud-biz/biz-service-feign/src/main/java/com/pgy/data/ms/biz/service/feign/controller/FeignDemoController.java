@@ -1,6 +1,6 @@
 package com.pgy.data.ms.biz.service.feign.controller;
 
-import com.pgy.data.ms.biz.service.feign.api.DemoApi;
+import com.pgy.data.ms.biz.service.feign.api.demo.DemoApi;
 import com.pgy.data.ms.biz.service.feign.client.demo.IDemoClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

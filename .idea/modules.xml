@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/springcloud-hystrix/admin/admin.iml" filepath="$PROJECT_DIR$/springcloud-hystrix/admin/admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-biz/biz-service/biz-service.iml" filepath="$PROJECT_DIR$/springcloud-biz/biz-service/biz-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-biz/biz-service-api/biz-service-api.iml" filepath="$PROJECT_DIR$/springcloud-biz/biz-service-api/biz-service-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-biz/biz-service-feign/biz-service-feign.iml" filepath="$PROJECT_DIR$/springcloud-biz/biz-service-feign/biz-service-feign.iml" />
