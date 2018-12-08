@@ -1,0 +1,35 @@
+server:
+    port: 9797
+
+spring:
+    application:
+        name: hystrix-tuibine
+    #Eureka注册中心访问认证
+    security:
+      user:
+        name: ginko
+        password: 123456
+
+# 指定注册中心地址
+eureka:
+    client:
+        service-url:
+            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:8000/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:9000/eureka/
+    # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
+    instance:
+        prefer-ip-address: true
+        instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+#turbine配置
+turbine:
+  # true 同一主机上的服务通过host和port的组合来进行区分，默认为true
+  # false 时 在本机才是时 监控中host集群数会为1了 因为本地host是一样的
+  combine-host-port: true
+  # 需要监控的应用名称，默认逗号隔开，内部使用Stringutils.commaDelimitedListToStringArray分割
+  app-config: consumer-feign1,consumer-feign2
+  cluster-name-expression: metadata['cluster']
+  # turbine.cluster-name-expression='default #如果要 监控全部应用 并禁用clusterConfig
+  # 集群名称
+  aggregator:
+    cluster-config: demoCluster
+  instanceUrlSuffix: actuator/hystrix.stream
