@@ -18,6 +18,6 @@ public interface IDemoApi {
      * @param name
      * @return
      */
-    @GetMapping(value="/hello2")
+    @GetMapping(value="/helloApi")
     public String helloApi(@RequestParam("name") String name);
 }

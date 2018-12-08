@@ -1,8 +1,7 @@
-package com.pgy.data.ms.biz.demo.svc.controller;
+package com.pgy.data.ms.biz.demo.svc.rest.controller;
 
 import com.pgy.data.ms.biz.demo.svc.entity.vo.DemoVo;
 import com.pgy.data.ms.biz.demo.svc.service.IPgyUserService;
-import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;

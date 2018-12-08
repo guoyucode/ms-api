@@ -15,6 +15,13 @@
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
+        <!-- 接口依赖 -->
+        <dependency>
+            <groupId>com.pgy.data.ms</groupId>
+            <artifactId>biz-service-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
         <!--druid-->
         <dependency>
             <groupId>com.alibaba</groupId>

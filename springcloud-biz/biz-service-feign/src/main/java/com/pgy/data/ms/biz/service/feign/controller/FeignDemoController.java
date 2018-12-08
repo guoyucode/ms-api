@@ -35,11 +35,11 @@ public class FeignDemoController {
         return demoClient.hello(name);
     }
 
-    @GetMapping("/hello2")
-    public String hello2(String name) {
+    @GetMapping("/helloApi")
+    public String helloApi(String name) {
         log.info("使用feign继承方式调用服务，参数name:{}", name);
 
-        return demoApi.hello(name);
+        return demoApi.helloApi(name);
     }
 
 }
