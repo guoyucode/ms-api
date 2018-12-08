@@ -1,0 +1,43 @@
+server:
+    port: 8888
+spring:
+    application:
+        name: zuul-swagger-server
+    #Eureka注册中心访问认证
+    security:
+        user:
+            name: ginko
+            password: 123456
+# 指定注册中心地址
+eureka:
+    client:
+        service-url:
+            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:8000/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:9000/eureka/
+    # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
+    instance:
+        prefer-ip-address: true
+        instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+## 路由规则 1、传统路由配置：不依赖服务发现。2、forward模式 直接转发至zuul提供的rest服务 3、服务发现模式
+
+# 自定义路由规则：通过一组zuul.routes.<route>.path 与 zuul.routes.<route>.serviceId 参数对的方式配置
+# http://localhost:8888/api-1/hello?name=ginkoZuul -> http://localhost:8028/hello?name=ginkoZuul
+# http://localhost:8888/api-2/hello2?name=ginkoZuul2 -> http://localhost:8028/hello2?name=ginkoZuul2
+
+zuul:
+    #  prefix: /gateway
+    SendErrorFilter:
+        error:
+            disable: true
+    ## 服务发现模式
+    routes:
+        api-a:
+            # 路由地址
+            path: /api-a/**
+            #为具体服务的名称
+            serviceId: demo-service-dev
+        api-b:
+            path: /api-b/**
+            serviceId: demo-service-test
+
+swagger.enabled: true

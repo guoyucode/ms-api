@@ -20,6 +20,11 @@
     </modules>
 
     <dependencies>
+        <!-- eureka client 依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
     </dependencies>
 
 

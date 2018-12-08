@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "swagger.enabled",
+      "type": "java.lang.String",
+      "description": "Description for swagger.enabled."
+    },
+    {
+      "name": "zuul.SendErrorFilter.error.disable",
+      "type": "java.lang.String",
+      "description": "Description for zuul.SendErrorFilter.error.disable."
+    }
+  ] }
