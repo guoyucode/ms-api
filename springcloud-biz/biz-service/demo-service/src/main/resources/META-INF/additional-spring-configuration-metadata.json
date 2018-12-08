@@ -1,0 +1,33 @@
+{
+  "properties": [
+    {
+      "name": "http.maxTotal",
+      "type": "java.lang.String",
+      "description": "Description for http.maxTotal."
+    },
+    {
+      "name": "http.defaultMaxPerRoute",
+      "type": "java.lang.String",
+      "description": "Description for http.defaultMaxPerRoute."
+    },
+    {
+      "name": "http.connectTimeout",
+      "type": "java.lang.String",
+      "description": "Description for http.connectTimeout."
+    },
+    {
+      "name": "http.connectionRequestTimeout",
+      "type": "java.lang.String",
+      "description": "Description for http.connectionRequestTimeout."
+    },
+    {
+      "name": "http.socketTimeout",
+      "type": "java.lang.String",
+      "description": "Description for http.socketTimeout."
+    },
+    {
+      "name": "http.staleConnectionCheckEnabled",
+      "type": "java.lang.String",
+      "description": "Description for http.staleConnectionCheckEnabled."
+    }
+  ] }

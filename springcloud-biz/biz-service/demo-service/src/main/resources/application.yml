@@ -1,0 +1,18 @@
+# 多环境配置
+spring:
+    profiles:
+        active: dev
+    application:
+        name: demo-service
+    security:
+        user:
+            name: ginko
+            password: 123456
+# 加载的配置文件
+spring.profiles.include: mybatis,druid,httpclient
+# ANSI,设置彩色输出会让日志更具可读性，
+spring.output.ansi.enabled: always
+# http编码
+spring.http.encoding.charset: UTF-8
+# 日志配置
+logging.config: classpath:logback/logback-spring.xml

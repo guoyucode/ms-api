@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pgy.data.ms.biz.demo.svc.dao.PgyUserDao">
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, user_name, user_name_md5, user_name_encrypt, real_name, real_name_md5, real_name_encrypt, idcard, idcard_md5, idcard_encrypt, pwd, salt, recommend_id, recommend_code, channel_id, add_time, modify_time, is_delete, last_login_time, first_login_time, last_login_sys, last_login_edition, last_login_model
+    </sql>
+
+</mapper>

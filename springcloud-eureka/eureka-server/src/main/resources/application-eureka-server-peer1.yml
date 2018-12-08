@@ -1,0 +1,30 @@
+#application-eureka-server-peer1.yml
+server: 
+  port: ${EUREKA_PORT:8000}
+
+spring:
+  application:
+    name: eureka-server-p1  #注册中心
+  #Eureka注册中心访问认证
+  security:
+    user:
+      name: ginko
+      password: 123456
+
+eureka: 
+  instance:
+    hostname: eureka-server-peer1
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+  client:
+    serviceUrl:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer2:9000/eureka/  # 向peer2进行注册
+
+info: # info请求的显示信息
+  app:
+    name: ${spring.application.name}
+    version: 1.0.0
+  build:
+    artifactId: @project.artifactId@
+    version: @project.version@

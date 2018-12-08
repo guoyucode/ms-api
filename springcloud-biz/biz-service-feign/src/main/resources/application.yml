@@ -1,0 +1,30 @@
+spring:
+    #Eureka注册中心访问认证
+    security:
+      user:
+        name: ginko
+        password: 123456
+
+# 指定注册中心地址
+eureka:
+    client:
+        service-url:
+            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:8000/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:9000/eureka/
+    # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
+    instance:
+        prefer-ip-address: true
+        instance-id: ${spring.cloud.client.ip-address}:${server.port}
+        metadata-map:
+            cluster: feign
+
+# 启用服务容错保护
+feign:
+    hystrix:
+        enabled: true
+
+#开启监控端点
+management:
+    endpoints:
+        web:
+            exposure:
+                include: hystrix.stream

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-config/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-hystrix/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-sleuth/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-eureka/eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-biz/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-biz/biz-service/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-biz/biz-service-api/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-biz/biz-service/sms-service/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-biz/biz-service/demo-service/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-biz/biz-service-feign/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
