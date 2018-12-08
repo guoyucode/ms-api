@@ -85,9 +85,11 @@ hs_err_pid*
 
 .idea/httpRequests/
 .idea/workspace.xml
-springcloud-biz/biz-service-api/src/main/java/com/pgy/data/ms/biz/service/api/sms/
-springcloud-biz/biz-service-feign/src/main/java/com/pgy/data/ms/biz/service/feign/client/sms/
-springcloud-biz/biz-service/demo-service/src/main/java/com/pgy/data/ms/biz/demo/svc/common/
-springcloud-biz/biz-service/demo-service/src/main/java/com/pgy/data/ms/biz/demo/svc/entity/po/
-springcloud-biz/biz-service/demo-service/src/main/java/com/pgy/data/ms/biz/demo/svc/exception/
-springcloud-config-repo/
+#springcloud-biz/biz-service-api/src/main/java/com/pgy/data/ms/biz/service/api/sms/
+#springcloud-biz/biz-service-feign/src/main/java/com/pgy/data/ms/biz/service/feign/client/sms/
+#springcloud-biz/biz-service/demo-service/src/main/java/com/pgy/data/ms/biz/demo/svc/common/
+#springcloud-biz/biz-service/demo-service/src/main/java/com/pgy/data/ms/biz/demo/svc/entity/po/
+#springcloud-biz/biz-service/demo-service/src/main/java/com/pgy/data/ms/biz/demo/svc/exception/
+#springcloud-config-repo/
+#springcloud-biz/biz-service-feign/src/main/java/com/pgy/data/ms/biz/service/feign/api/sms/
+#springcloud-biz/biz-service-feign/src/main/java/com/pgy/data/ms/biz/service/feign/fallback/sms/
