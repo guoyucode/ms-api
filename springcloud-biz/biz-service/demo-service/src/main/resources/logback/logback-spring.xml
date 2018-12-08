@@ -7,10 +7,13 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
 <configuration scan="false" scanPeriod="60 seconds" debug="false">
     <!-- 定义日志的根目录 -->
     <springProfile name="dev">
-        <property name="LOG_HOME" value="c:\\apps\\log"/>
+        <property name="LOG_HOME" value="D:\\logs\\ms-api"/>
+    </springProfile>
+    <springProfile name="dev">
+        <property name="LOG_HOME" value="/www/logs/ms-api"/>
     </springProfile>
     <springProfile name="prod">
-        <property name="LOG_HOME" value="/apps/log"/>
+        <property name="LOG_HOME" value="/www/logs/ms-api"/>
     </springProfile>
     <!-- 定义日志文件名称 -->
     <property name="appName" value="ms-api_demo-service"/>
