@@ -1,0 +1,29 @@
+server:
+    port: 9595
+spring:
+    application:
+        name: config-server
+    cloud:
+        config:
+            server:
+                #配置文件git配置
+                git:
+                    # 搜索路径，即配置文件的目录，可配置多个，逗号分隔。默认为根目录。
+                    searchPaths: springcloud-config-repo
+                    uri: https://github.com/wangmeixin/ms-api.git
+                    # git用户名和密码 针对私有仓库而言需要填写
+                    username: null
+                    password: null
+    security:
+        user:
+            name: ginko
+            password: 123456
+# 指定注册中心地址
+eureka:
+    client:
+        service-url:
+            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:8000/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:9000/eureka/
+    # 启用ip配置 这样在注册中心列表中看见的是以ip+端口呈现的
+    instance:
+        prefer-ip-address: true
+        instance-id: ${spring.cloud.client.ip-address}:${server.port}
