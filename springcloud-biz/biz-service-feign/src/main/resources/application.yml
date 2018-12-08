@@ -22,9 +22,9 @@ feign:
     hystrix:
         enabled: true
 
-#开启监控端点
+# 暴露 Actuator 端点
 management:
-    endpoints:
-        web:
-            exposure:
-                include: hystrix.stream
+  endpoints:
+    web:
+      exposure:
+        include: '*'  # include: hystrix.stream

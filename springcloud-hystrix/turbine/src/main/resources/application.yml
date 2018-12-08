@@ -33,3 +33,10 @@ turbine:
   aggregator:
     cluster-config: demoCluster
   instanceUrlSuffix: actuator/hystrix.stream
+
+# 暴露 Actuator 端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

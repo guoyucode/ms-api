@@ -16,3 +16,10 @@ spring.output.ansi.enabled: always
 spring.http.encoding.charset: UTF-8
 # 日志配置
 logging.config: classpath:logback/logback-spring.xml
+
+# 暴露 Actuator 端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
