@@ -3,7 +3,6 @@ package com.pgy.data.ms.biz.service.feign.fallback.demo;
 import com.pgy.data.ms.biz.service.feign.client.demo.IDemoClient;
 import feign.hystrix.FallbackFactory;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -16,8 +15,7 @@ import javax.annotation.Resource;
 @Slf4j
 public class DemoClientFallbackFactory implements FallbackFactory<IDemoClient> {
 
-    @Resource
-    @Qualifier("demoClientFallback")
+    @Resource(name = "demoClientFallback")
     private IDemoClient demoClient;
 
     @Override

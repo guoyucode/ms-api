@@ -1,6 +1,6 @@
 package com.pgy.data.ms.biz.service.feign.fallback.demo;
 
-import com.pgy.data.ms.biz.service.api.demo.IDemoApi;
+import com.pgy.data.ms.biz.service.feign.api.demo.DemoApi;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
@@ -9,9 +9,9 @@ import org.springframework.stereotype.Component;
  * @description 服务发生熔断
  * @date 2018/11/21 14:48
  */
-@Component("demoApiFallback")
 @Slf4j
-public class DemoApiFailImpl implements IDemoApi {
+@Component
+public class DemoApiFailImpl implements DemoApi {
 
     /**
      * 定义接口

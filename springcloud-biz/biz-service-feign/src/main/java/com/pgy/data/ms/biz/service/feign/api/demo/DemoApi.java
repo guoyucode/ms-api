@@ -10,7 +10,7 @@ import org.springframework.cloud.openfeign.FeignClient;
  * fallback = DemoApiFailImpl.class
  * @date 2018/11/21 13:39
  */
-@FeignClient(name = IDemoApi.SERVICE_NAME/*,fallback = DemoApiFailImpl.class*/)
+@FeignClient(name = IDemoApi.SERVICE_NAME, fallback = DemoApiFailImpl.class)
 public interface DemoApi extends IDemoApi {
 
 }
