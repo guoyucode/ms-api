@@ -7,10 +7,12 @@
       <w>hystrix</w>
       <w>jcenter</w>
       <w>mybatisplus</w>
+      <w>shello</w>
       <w>springboot</w>
       <w>springcloud</w>
       <w>stringutils</w>
       <w>zuul</w>
+      <w>zuulhello</w>
     </words>
   </dictionary>
 </component>

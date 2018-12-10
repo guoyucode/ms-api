@@ -1,4 +1,4 @@
-package com.pgy.data.ms.biz.demo.svc.entity.vo;
+package com.pgy.data.ms.biz.demo.svc.entity.po;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
@@ -7,18 +7,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotNull;
-
 /**
  * @author ginko
- * @date 2018/12/8 17:12
+ * @description 响应实体
+ * @date 2018/12/10 13:37
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @ApiModel
-public class DemoVo {
+public class DemoPo {
 
     @ApiModelProperty(name = "code", value = "编码", example = "ginko")
     String code;
@@ -29,7 +28,4 @@ public class DemoVo {
     @ApiModelProperty(name = "remark", value = "备注", example = "https://github.com/wangmeixin")
     String remark;
 
-    @NotNull(message = "id不能为空")
-    @ApiModelProperty(name = "id", value = "ID", example = "1")
-    private Long id;
 }

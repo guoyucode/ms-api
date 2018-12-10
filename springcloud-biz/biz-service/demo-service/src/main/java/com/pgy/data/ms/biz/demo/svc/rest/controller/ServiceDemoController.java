@@ -1,7 +1,10 @@
 package com.pgy.data.ms.biz.demo.svc.rest.controller;
 
+import com.pgy.data.ms.biz.demo.svc.entity.po.DemoPo;
 import com.pgy.data.ms.biz.demo.svc.entity.vo.DemoVo;
 import com.pgy.data.ms.biz.demo.svc.service.IPgyUserService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
@@ -18,6 +21,7 @@ import javax.validation.Valid;
  * @since 2018-12-08
  */
 @RestController
+@Api(tags = "demo-service服务")
 @Slf4j
 public class ServiceDemoController {
 
@@ -38,11 +42,24 @@ public class ServiceDemoController {
         return userService.selectById(demoVo.getId()).toString();
     }
 
+    @PostMapping("/shello")
+    public DemoPo sHello(@Valid @RequestBody(required = false) DemoVo demoVo) {
+        log.info("demoVo:{}", demoVo);
+
+        return DemoPo.builder()
+                .code(demoVo.getCode())
+                .name(demoVo.getName())
+                .remark(demoVo.getRemark())
+                .build();
+    }
+
     @GetMapping("/hello")
+    @ApiOperation(value = "demo示例")
     public String hello(@RequestParam(value = "name", defaultValue = "ginko") String name) {
 
         return "Hello " + name + " ,I'm from port:" + port;
     }
+
 
 }
 

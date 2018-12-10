@@ -29,5 +29,10 @@
       "name": "http.staleConnectionCheckEnabled",
       "type": "java.lang.String",
       "description": "Description for http.staleConnectionCheckEnabled."
+    },
+    {
+      "name": "swagger.enabled",
+      "type": "java.lang.String",
+      "description": "Description for swagger.enabled."
     }
   ] }

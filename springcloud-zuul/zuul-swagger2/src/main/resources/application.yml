@@ -40,13 +40,25 @@ zuul:
             disable: true
     ## 服务发现模式
     routes:
-        api-a:
+        api-ds:
             # 路由地址
-            path: /api-a/**
+            path: /api-ds/**
+            #为具体服务的名称
+            serviceId: demo-service-dev
+        api-ts:
+            path: /api-ts/**
+            serviceId: demo-service-test
+        api-ps:
+            path: /api-ps/**
+            serviceId: demo-service-prod
+
+        api-af:
+            # 路由地址
+            path: /api-af/**
             #为具体服务的名称
             serviceId: consumer-feign1
-        api-b:
-            path: /api-b/**
+        api-bf:
+            path: /api-bf/**
             serviceId: consumer-feign2
 
 swagger.enabled: true

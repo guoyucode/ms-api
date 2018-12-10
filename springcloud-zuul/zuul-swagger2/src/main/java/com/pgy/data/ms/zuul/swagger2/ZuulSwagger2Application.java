@@ -26,7 +26,7 @@ public class ZuulSwagger2Application {
         log.info("spring-cloud-zuul启动!");
     }
 
-    @Bean
+//    @Bean
     public AccessZuulFilter accessZuulFilter() {
         return new AccessZuulFilter();
     }
