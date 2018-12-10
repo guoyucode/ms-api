@@ -42,7 +42,7 @@ public class AccessZuulFilter extends ZuulFilter {
             //使其不进行转发
             ctx.setSendZuulResponse(false);
             //这里可进行自定义提示
-            ctx.setResponseBody("{\"code\":\"9999\",\"msg\":\"非法访问\"}");
+            ctx.setResponseBody("{\"code\":\"9401\",\"msg\":\"非法访问\"}");
             ctx.setResponseStatusCode(HttpStatus.UNAUTHORIZED.value());
             //或者添加一个额外参数也可以 传递参数可以使用
 //		   ctx.set("checkAuth",false);
