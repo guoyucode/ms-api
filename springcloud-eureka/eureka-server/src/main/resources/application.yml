@@ -11,8 +11,3 @@ eureka:
 spring:
     profiles:
         active: eureka-server-peer1
-    rabbitmq:
-        host: ${RABBIT_MQ_HOST:localhost}
-        port: ${RABBIT_MQ_PORT:5672}
-        username: ${RABBIT_MQ_USERNAME:ginko}
-        password: ${RABBIT_MQ_PASSWORD:ginko}

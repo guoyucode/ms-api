@@ -2,4 +2,4 @@ server:
     port: 8022
 spring:
     application:
-        name: consumer-feign2
+        name: receiver-feign2

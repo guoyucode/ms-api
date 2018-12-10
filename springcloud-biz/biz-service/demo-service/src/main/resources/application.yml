@@ -1,7 +1,7 @@
 # 多环境配置
 spring:
-#    profiles:
-#        active: dev
+    profiles:
+        active: dev
     security:
         user:
             name: ginko

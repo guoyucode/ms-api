@@ -1,6 +1,7 @@
 package com.pgy.data.ms.biz.demo.svc;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -11,6 +12,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @author ginko
  * @date 2018-12-8 16:26:22
  */
+@EnableRabbit
 @SpringBootApplication
 //注意这里也可使用@EnableEurekaClient
 //但由于springcloud是灵活的，注册中心支持eureka、consul、zookeeper等

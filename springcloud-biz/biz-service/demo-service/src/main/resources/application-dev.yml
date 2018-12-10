@@ -44,3 +44,34 @@ spring:
         lettuce.pool.min-idle: 50
         # 关闭超时时间
         lettuce.shutdown-timeout: 1000s
+    # rabbitmq相关配置
+    rabbitmq:
+        #rabbitmq连接参数
+        host: ${RABBIT_MQ_HOST:127.0.0.1}
+        port: ${RABBIT_MQ_PORT:5672}
+        username: ${RABBIT_MQ_USERNAME:ginko}
+        password: ${RABBIT_MQ_PASSWORD:ginko}
+        virtual-host: /
+        listener:
+            simple:
+                # 手动确认
+                acknowledge-mode: manual
+                #消费者自动启动
+                auto-startup: true
+                #消费者数量
+                concurrency: 10
+                #消费失败，自动重新入队
+                default-requeue-rejected: true
+                max-concurrency: 10
+                #消费者每次从队列获取的消息数量
+                prefetch: 1
+        # 开启生产者确认模式
+        publisher-confirms: true
+        template:
+            #启用发送重试
+            retry:
+                enabled: true
+                initial-interval: 1000s
+                max-attempts: 3
+                max-interval: 10000s
+                multiplier: 1.0

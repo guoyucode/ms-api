@@ -56,10 +56,10 @@ zuul:
             # 路由地址
             path: /api-af/**
             #为具体服务的名称
-            serviceId: consumer-feign1
+            serviceId: receiver-feign1
         api-bf:
             path: /api-bf/**
-            serviceId: consumer-feign2
+            serviceId: receiver-feign2
 
 swagger.enabled: true
 

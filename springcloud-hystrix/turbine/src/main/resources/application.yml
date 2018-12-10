@@ -26,7 +26,7 @@ turbine:
   # false 时 在本机才是时 监控中host集群数会为1了 因为本地host是一样的
   combine-host-port: true
   # 需要监控的应用名称，默认逗号隔开，内部使用Stringutils.commaDelimitedListToStringArray分割
-  app-config: consumer-feign1,consumer-feign2
+  app-config: receiver-feign1,receiver-feign2
   cluster-name-expression: metadata['cluster']
   # turbine.cluster-name-expression='default #如果要 监控全部应用 并禁用clusterConfig
   # 集群名称
