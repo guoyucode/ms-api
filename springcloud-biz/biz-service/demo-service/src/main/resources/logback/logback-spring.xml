@@ -9,7 +9,7 @@ debug：当此属性设置为true时，将打印出logback内部日志信息，�
     <springProfile name="dev">
         <property name="LOG_HOME" value="D:\\logs\\ms-api"/>
     </springProfile>
-    <springProfile name="dev">
+    <springProfile name="test">
         <property name="LOG_HOME" value="/www/logs/ms-api"/>
     </springProfile>
     <springProfile name="prod">
