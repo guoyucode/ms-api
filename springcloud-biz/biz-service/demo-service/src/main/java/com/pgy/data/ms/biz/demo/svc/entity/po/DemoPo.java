@@ -20,9 +20,6 @@ import lombok.NoArgsConstructor;
 @ApiModel
 public class DemoPo {
 
-    @Constant(message = "version只能为1.0", value = "1.0")
-    String version;
-
     @ApiModelProperty(name = "code", value = "编码", example = "ginko")
     String code;
 

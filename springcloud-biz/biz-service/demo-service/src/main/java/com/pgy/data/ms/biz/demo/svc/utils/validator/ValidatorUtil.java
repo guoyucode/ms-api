@@ -11,7 +11,6 @@ import java.util.Set;
 
 /**
  * @author ginko
- * @description ${todo}
  * @date 2018/12/10 14:59
  */
 public class ValidatorUtil {

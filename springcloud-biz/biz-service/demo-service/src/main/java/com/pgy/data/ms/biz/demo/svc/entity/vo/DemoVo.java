@@ -1,5 +1,6 @@
 package com.pgy.data.ms.biz.demo.svc.entity.vo;
 
+import com.pgy.data.ms.biz.demo.svc.valid.Constant;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.AllArgsConstructor;
@@ -28,6 +29,9 @@ public class DemoVo {
 
     @ApiModelProperty(name = "remark", value = "备注", example = "https://github.com/wangmeixin")
     String remark;
+
+    @Constant(message = "version只能为1.0", value = "1.0")
+    String version;
 
     @NotNull(message = "id不能为空")
     @ApiModelProperty(name = "id", value = "ID", example = "1")

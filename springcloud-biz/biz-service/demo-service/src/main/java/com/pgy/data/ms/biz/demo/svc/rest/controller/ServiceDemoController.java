@@ -70,7 +70,7 @@ public class ServiceDemoController {
     @GetMapping("/demo/valid")
     public String demoValid(@Valid DemoVo req) {
         //手动校验
-//        ValidatorUtil.validate(req);
+        ValidatorUtil.validate(req);
         return req.getCode() + "," + req.getName();
     }
 
