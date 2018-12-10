@@ -34,6 +34,7 @@ eureka:
 # http://localhost:8888/api-2/hello2?name=ginkoZuul2 -> http://localhost:8028/hello2?name=ginkoZuul2
 zuul:
     #  prefix: /gateway
+    ## 停用默认的异常处理器SendErrorFilter
     SendErrorFilter:
         error:
             disable: true
@@ -49,4 +50,7 @@ zuul:
             serviceId: consumer-feign2
 
 swagger.enabled: true
+
+
+
 
