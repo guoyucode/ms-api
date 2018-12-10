@@ -8,13 +8,14 @@ eureka:
     instance:
         prefer-ip-address: true
         instance-id: ${spring.cloud.client.ip-address}:${server.port}
-
 spring:
+    application:
+        name: demo-service
     #Eureka注册中心访问认证
     security:
-      user:
-        name: ginko
-        password: 123456
+        user:
+            name: ginko
+            password: 123456
     # 数据库相关配置
     datasource:
         druid:

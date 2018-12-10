@@ -1,8 +1,13 @@
 server:
     port: 8888
+    max-http-header-size: 8192
 spring:
     application:
         name: zuul-swagger-server
+    # 关闭热部署
+    devtools:
+      restart:
+        enabled: false
     #Eureka注册中心访问认证
     security:
         user:
@@ -17,13 +22,10 @@ eureka:
     instance:
         prefer-ip-address: true
         instance-id: ${spring.cloud.client.ip-address}:${server.port}
-
 ## 路由规则 1、传统路由配置：不依赖服务发现。2、forward模式 直接转发至zuul提供的rest服务 3、服务发现模式
-
 # 自定义路由规则：通过一组zuul.routes.<route>.path 与 zuul.routes.<route>.serviceId 参数对的方式配置
 # http://localhost:8888/api-1/hello?name=ginkoZuul -> http://localhost:8028/hello?name=ginkoZuul
 # http://localhost:8888/api-2/hello2?name=ginkoZuul2 -> http://localhost:8028/hello2?name=ginkoZuul2
-
 zuul:
     #  prefix: /gateway
     SendErrorFilter:
@@ -35,7 +37,7 @@ zuul:
             # 路由地址
             path: /api-a/**
             #为具体服务的名称
-            serviceId: demo-service-dev
+            serviceId: demo-service
         api-b:
             path: /api-b/**
             serviceId: demo-service-test

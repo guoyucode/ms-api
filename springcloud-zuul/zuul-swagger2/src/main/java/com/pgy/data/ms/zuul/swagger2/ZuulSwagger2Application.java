@@ -18,5 +18,6 @@ public class ZuulSwagger2Application {
 
     public static void main(String[] args) {
         SpringApplication.run(ZuulSwagger2Application.class, args);
+        log.info("spring-cloud-zuul启动!");
     }
 }

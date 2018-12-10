@@ -10,6 +10,8 @@ eureka:
         instance-id: ${spring.cloud.client.ip-address}:${server.port}
 # 数据库相关配置
 spring:
+    application:
+        name: demo-service-test
     datasource:
         druid:
             url: jdbc:mysql://116.62.143.57:3306/duobei?useUnicode=true&characterEncoding=UTF-8&useSSL=false
