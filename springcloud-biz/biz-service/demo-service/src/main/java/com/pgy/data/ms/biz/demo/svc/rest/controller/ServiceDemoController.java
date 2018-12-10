@@ -2,6 +2,7 @@ package com.pgy.data.ms.biz.demo.svc.rest.controller;
 
 import com.pgy.data.ms.biz.demo.svc.entity.po.DemoPo;
 import com.pgy.data.ms.biz.demo.svc.entity.vo.DemoVo;
+import com.pgy.data.ms.biz.demo.svc.exception.CommonException;
 import com.pgy.data.ms.biz.demo.svc.service.IPgyUserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -58,6 +59,11 @@ public class ServiceDemoController {
     public String hello(@RequestParam(value = "name", defaultValue = "ginko") String name) {
 
         return "Hello " + name + " ,I'm from port:" + port;
+    }
+
+    @GetMapping("/exdemo")
+    public String exdemo() {
+        throw new CommonException("1001", "发送自定义异常");
     }
 
 
