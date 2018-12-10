@@ -1,6 +1,12 @@
 server:
     port: 8888
     max-http-header-size: 8192
+#日志相关配置
+#logging:
+#  level:
+#    root: DEBUG
+#    org.springframework.web: DEBUG
+
 spring:
     application:
         name: zuul-swagger-server
@@ -37,9 +43,10 @@ zuul:
             # 路由地址
             path: /api-a/**
             #为具体服务的名称
-            serviceId: demo-service
+            serviceId: consumer-feign1
         api-b:
             path: /api-b/**
-            serviceId: demo-service-test
+            serviceId: consumer-feign2
 
 swagger.enabled: true
+

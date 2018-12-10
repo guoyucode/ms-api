@@ -11,7 +11,7 @@ public interface IDemoApi {
     /**
      * 定义提供者服务名
      */
-    public static final String SERVICE_NAME = "demo-service";
+    public static final String SERVICE_NAME = "demo-service-dev";
 
     /**
      * 定义接口

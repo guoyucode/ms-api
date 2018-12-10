@@ -10,7 +10,7 @@ eureka:
         instance-id: ${spring.cloud.client.ip-address}:${server.port}
 spring:
     application:
-        name: demo-service
+        name: demo-service-dev
     #Eureka注册中心访问认证
     security:
         user:

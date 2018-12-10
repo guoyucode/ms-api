@@ -1,7 +1,5 @@
 server:
     port: 8021
-
 spring:
     application:
         name: consumer-feign1
-
