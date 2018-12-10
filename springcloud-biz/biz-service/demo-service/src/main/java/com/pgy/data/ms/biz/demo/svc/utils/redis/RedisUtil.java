@@ -1,4 +1,4 @@
-package com.pgy.data.ms.biz.demo.svc.utils;
+package com.pgy.data.ms.biz.demo.svc.utils.redis;
 
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;

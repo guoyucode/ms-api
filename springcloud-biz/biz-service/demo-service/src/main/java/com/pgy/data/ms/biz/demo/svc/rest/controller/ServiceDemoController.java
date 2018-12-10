@@ -4,6 +4,7 @@ import com.pgy.data.ms.biz.demo.svc.entity.po.DemoPo;
 import com.pgy.data.ms.biz.demo.svc.entity.vo.DemoVo;
 import com.pgy.data.ms.biz.demo.svc.exception.CommonException;
 import com.pgy.data.ms.biz.demo.svc.service.IPgyUserService;
+import com.pgy.data.ms.biz.demo.svc.utils.validator.ValidatorUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -66,6 +67,12 @@ public class ServiceDemoController {
         throw new CommonException("1001", "发送自定义异常");
     }
 
+    @GetMapping("/demo/valid")
+    public String demoValid(@Valid DemoVo req) {
+        //手动校验
+//        ValidatorUtil.validate(req);
+        return req.getCode() + "," + req.getName();
+    }
 
 }
 

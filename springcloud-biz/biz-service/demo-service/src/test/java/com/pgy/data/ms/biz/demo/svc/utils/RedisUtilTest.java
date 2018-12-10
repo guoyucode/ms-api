@@ -1,5 +1,6 @@
 package com.pgy.data.ms.biz.demo.svc.utils;
 
+import com.pgy.data.ms.biz.demo.svc.utils.redis.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
