@@ -20,6 +20,8 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
 @Slf4j
 public class AccessZuulFilter extends ZuulFilter {
 
+    private static final String SWAGGER_TAIL_URL = "api-docs";
+
     @Override
     public boolean shouldFilter() {
         //此方法可以根据请求的url进行判断是否需要拦截
@@ -32,13 +34,15 @@ public class AccessZuulFilter extends ZuulFilter {
         RequestContext ctx = RequestContext.getCurrentContext();
         //获取request对象
         HttpServletRequest request = ctx.getRequest();
+        //过滤swagger2
+        String method = request.getRequestURI();
         //避免中文乱码
         ctx.addZuulResponseHeader("Content-type", "text/json;charset=UTF-8");
         ctx.getResponse().setCharacterEncoding("UTF-8");
         //打印日志
         log.info("请求方式：{},地址：{}", request.getMethod(), request.getRequestURI());
         String token = request.getParameter("token");
-        if (StringUtils.isBlank(token)) {
+        if (StringUtils.isBlank(token) && !method.contains(SWAGGER_TAIL_URL)) {
             //使其不进行转发
             ctx.setSendZuulResponse(false);
             //这里可进行自定义提示
@@ -48,7 +52,6 @@ public class AccessZuulFilter extends ZuulFilter {
 //		   ctx.set("checkAuth",false);
         }
 //		System.out.println(1/0);
-        //这返回值没啥用
         return null;
     }
 
