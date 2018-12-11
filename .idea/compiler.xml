@@ -30,6 +30,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="admin" target="1.8" />
+      <module name="biz-common" target="1.8" />
       <module name="biz-service" target="1.8" />
       <module name="biz-service-api" target="1.8" />
       <module name="biz-service-feign" target="1.8" />
