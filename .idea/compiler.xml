@@ -17,7 +17,6 @@
         <module name="sms-service" />
         <module name="springcloud-biz-api" />
         <module name="springcloud-config" />
-        <module name="springcloud-eureka" />
         <module name="springcloud-hystrix" />
         <module name="springcloud-sleuth" />
         <module name="springcloud-zuul" />

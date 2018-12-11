@@ -11,7 +11,7 @@
     <groupId>com.pgy.data.ms</groupId>
     <artifactId>springcloud-eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>springcloud-eureka</name>
     <description>Demo project for Spring Boot</description>
 
