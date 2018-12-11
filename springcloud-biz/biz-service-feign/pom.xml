@@ -8,6 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <groupId>com.pgy.data.ms.bizfgn</groupId>
     <artifactId>biz-service-feign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -17,7 +18,7 @@
     <dependencies>
         <!-- 接口依赖 -->
         <dependency>
-            <groupId>com.pgy.data.ms</groupId>
+            <groupId>com.pgy.data.ms.bizapi</groupId>
             <artifactId>biz-service-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
