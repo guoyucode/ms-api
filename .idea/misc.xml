@@ -12,7 +12,6 @@
         <option value="$PROJECT_DIR$/springcloud-eureka/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-biz/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-biz/biz-service/pom.xml" />
-        <option value="$PROJECT_DIR$/springcloud-biz/biz-service-api/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-biz/biz-service/sms-service/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-biz/biz-service/demo-service/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-biz/biz-service-feign/pom.xml" />
@@ -22,7 +21,15 @@
         <option value="$PROJECT_DIR$/springcloud-config/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-config/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-zuul/zuul-swagger2/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-bizapi/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-biz-api/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/springcloud-bizapi/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-svcapi/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

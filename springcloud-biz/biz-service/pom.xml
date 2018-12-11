@@ -11,16 +11,16 @@
     <groupId>com.pgy.data.ms.bizscv</groupId>
     <artifactId>biz-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>biz-service</name>
     <description>Demo project for Spring Boot</description>
 
     <dependencies>
-        <!-- 接口依赖 -->
         <dependency>
-            <groupId>com.pgy.data.ms.bizapi</groupId>
-            <artifactId>biz-service-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.1.3.RELEASE</version>
+            <scope>test</scope>
         </dependency>
         <!--swagger2 -->
         <dependency>
@@ -38,5 +38,6 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>

@@ -3,19 +3,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.pgy.data.ms</groupId>
-        <artifactId>springcloud-biz</artifactId>
+        <groupId>com.pgy.data</groupId>
+        <artifactId>ms-api</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.pgy.data.ms.bizapi</groupId>
-    <artifactId>biz-service-api</artifactId>
+    <artifactId>springcloud-biz-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>biz-service-api</name>
+    <name>springcloud-biz-api</name>
     <description>Demo project for Spring Boot</description>
 
-    <dependencies>
-    </dependencies>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
 
 </project>

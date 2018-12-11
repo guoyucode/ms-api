@@ -1,6 +1,6 @@
 package com.pgy.data.ms.biz.demo.svc.rest.impl;
 
-import com.pgy.data.ms.biz.service.api.demo.IDemoApi;
+import com.pgy.data.biz.api.demo.IDemoApi;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RestController;
 

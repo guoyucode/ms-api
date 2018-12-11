@@ -1,4 +1,4 @@
-package com.pgy.data.ms.biz.service.api.demo;
+package com.pgy.data.biz.api.demo;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

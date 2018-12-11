@@ -1,6 +1,6 @@
 package com.pgy.data.ms.biz.service.feign.api.demo;
 
-import com.pgy.data.ms.biz.service.api.demo.IDemoApi;
+import com.pgy.data.biz.api.demo.IDemoApi;
 import com.pgy.data.ms.biz.service.feign.fallback.demo.DemoApiFailImpl;
 import org.springframework.cloud.openfeign.FeignClient;
 

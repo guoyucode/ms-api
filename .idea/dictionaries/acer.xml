@@ -2,6 +2,7 @@
   <dictionary name="acer">
     <words>
       <w>baomidou</w>
+      <w>bizapi</w>
       <w>emailkey</w>
       <w>emailnotify</w>
       <w>erlang</w>
@@ -19,6 +20,7 @@
       <w>springboot</w>
       <w>springcloud</w>
       <w>stringutils</w>
+      <w>svcapi</w>
       <w>systemnotify</w>
       <w>systemtipkey</w>
       <w>zuul</w>

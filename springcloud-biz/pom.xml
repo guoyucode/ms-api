@@ -11,18 +11,23 @@
     <groupId>com.pgy.data.ms</groupId>
     <artifactId>springcloud-biz</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <name>springcloud-biz</name>
     <description>Demo project for Spring Boot</description>
 
     <modules>
         <module>biz-service</module>
-        <module>biz-service-api</module>
         <module>biz-service-feign</module>
 
     </modules>
 
     <dependencies>
+        <!-- 接口依赖 -->
+        <dependency>
+            <groupId>com.pgy.data</groupId>
+            <artifactId>springcloud-biz-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <!-- 客户端依赖 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -31,5 +36,25 @@
 
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- 没有该配置，devtools 不生效 -->
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
