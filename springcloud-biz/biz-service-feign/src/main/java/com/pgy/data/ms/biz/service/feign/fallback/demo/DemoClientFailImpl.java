@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @author ginko
- * @description ${todo}
+ * @description 类模式
  * @date 2018/12/8 23:03
  */
 @Component("demoClientFallback")

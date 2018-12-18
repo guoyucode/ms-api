@@ -4,13 +4,13 @@ server:
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:8000/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:9000/eureka/
+            defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer1:8000/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@eureka-server-peer2:9000/eureka/
     instance:
         prefer-ip-address: true
         instance-id: ${spring.cloud.client.ip-address}:${server.port}
 spring:
     application:
-        name: sms-service
+        name: message-service
     #Eureka注册中心访问认证
     security:
         user:

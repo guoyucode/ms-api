@@ -15,9 +15,12 @@ public interface IDemoApi {
 
     /**
      * 定义接口
+     *
      * @param name
      * @return
      */
-    @GetMapping(value="/helloApi")
+    @GetMapping(value = "/helloApi")
     public String helloApi(@RequestParam("name") String name);
+
+
 }

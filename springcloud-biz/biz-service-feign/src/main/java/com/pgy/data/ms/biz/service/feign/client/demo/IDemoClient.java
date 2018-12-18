@@ -1,6 +1,5 @@
 package com.pgy.data.ms.biz.service.feign.client.demo;
 
-import com.pgy.data.ms.biz.service.feign.fallback.demo.DemoClientFailImpl;
 import com.pgy.data.ms.biz.service.feign.fallback.demo.DemoClientFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;

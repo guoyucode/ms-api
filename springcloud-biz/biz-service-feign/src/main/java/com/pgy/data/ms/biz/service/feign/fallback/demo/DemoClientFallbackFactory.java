@@ -9,6 +9,7 @@ import javax.annotation.Resource;
 
 /**
  * @author ginko
+ * @description 工厂模式
  * @date 2018/11/21 14:49
  */
 @Component
