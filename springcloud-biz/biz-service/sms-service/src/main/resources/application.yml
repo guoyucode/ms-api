@@ -1,5 +1,10 @@
 server:
     port: 8005
+
+devtools:
+    restart:
+      enabled: false
+
 #注册中心配置
 eureka:
     client:
@@ -10,7 +15,7 @@ eureka:
         instance-id: ${spring.cloud.client.ip-address}:${server.port}
 spring:
     application:
-        name: message-service
+        name: message
     #Eureka注册中心访问认证
     security:
         user:
