@@ -20,21 +20,20 @@ public class SmsController {
     }
 
     @PostMapping("/message/str")
-    public String sterew(@Valid @RequestBody TestVo vo) {
+    public String testStr(@Valid @RequestBody TestVo vo) {
         return "=====" + vo.getName();
 
     }
 
+    /**
+     * 在返回自定义对象时候不能用PostMapping注解
+     *
+     * @param vo
+     * @return
+     */
     @RequestMapping(value = "/message/sendSmsWithVerifyCode", method = RequestMethod.POST)
-    public TestPo sendSmsWithVerifyCode(@Valid @RequestBody TestVo vo) {
+    public TestPo testObj(@Valid @RequestBody TestVo vo) {
         return TestPo.builder().name(vo.getName()).build();
-
-    }
-
-    @PostMapping("/message/sendSmsNoVerifyCode")
-    public String sendSmsNoVerifyCode(@Valid @RequestBody TestVo vo) {
-
-        return "sendSmsNoVerifyCode" + vo.getName();
 
     }
 }
